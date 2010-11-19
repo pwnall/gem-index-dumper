@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.authors = ["Victor Costan"]
   s.date = %q{2010-11-19}
   s.default_executable = %q{gem-index-dumper}
-  s.description = %q{TODO: longer description of your gem}
-  s.email = %q{costan@gmail.com}
+  s.description = %q{Command-line utility to perform queries on the gem index that are useful for detecting MITM attacks. }
+  s.email = %q{victor@costan.us}
   s.executables = ["gem-index-dumper"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "bin/gem-index-dumper",
+    "gem-index-dumper.gemspec",
     "lib/gem-index-dumper.rb",
     "spec/gem-index-dumper_spec.rb",
     "spec/spec_helper.rb"
@@ -37,7 +38,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Spot-checks on the gem index.}
   s.test_files = [
     "spec/gem-index-dumper_spec.rb",
     "spec/spec_helper.rb"
