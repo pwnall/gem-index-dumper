@@ -15,9 +15,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "gem-index-dumper"
   gem.homepage = "http://github.com/pwnall/gem-index-dumper"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "costan@gmail.com"
+  gem.summary = %Q{Spot-checks on the gem index.}
+  gem.description = %Q{Command-line utility to perform queries on the gem index that are useful for detecting MITM attacks. }
+  gem.email = "victor@costan.us"
   gem.authors = ["Victor Costan"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
