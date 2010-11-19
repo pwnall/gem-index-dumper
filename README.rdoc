@@ -1,6 +1,26 @@
 = gem-index-dumper
 
-Description goes here.
+Spot-checks on the gem index.
+
+== Usage
+
+The gem installs a command-line tool gem-index-dumper which can be used as
+follows.
+
+    gem-index-dumper
+    
+Dumps all the gem index entry (all gems, all versions, all platforms).
+
+    gem-index-dumper ^a
+    
+Selects the gems starting with a and dumps the latest version of each gem,
+together with SHA-1s for the gem files. 
+
+    gem-index-dumper ^a \\.0$
+    
+Selects the gems starting with a and dumps the versions of each gem that end
+in .0 (e.g. 1.0, 2.0, 3.1.0), together with SHA-1s for the gem files.
+
 
 == Contributing to gem-index-dumper
  
@@ -14,6 +34,5 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Victor Costan. See LICENSE.txt for
-further details.
+Copyright (c) 2010 Victor Costan. See LICENSE.txt for further details.
 

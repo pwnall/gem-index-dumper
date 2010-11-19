@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'gem-index-dumper'
+
+case ARGV.length
+when 0
+  print GemIndexDumper.dump_remote_gems
+when 1
+  print GemIndexDumper.dump_gem_digests Regexp.new(ARGV[0])
+when 2
+  print GemIndexDumper.dump_gem_digests Regexp.new(ARGV[0]), Regexp.new(ARGV[1])
+else
+  print <<END
+Usage: #{$0} [name_pattern] [version_pattern]
+
+If no pattern is given, dumps all the gem entries in the index.
+
+If a name pattern is given, dumps the SHA-1 hash of the latest version for each
+gem whose name matches the pattern. 
+END
+end
